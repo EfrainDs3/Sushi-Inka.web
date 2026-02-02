@@ -9,3 +9,4 @@ import web.Sushi_Inka.entity.Sucursal;
 public interface SucursalesRepository extends JpaRepository<Sucursal, Integer> {
 
 }
+

@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import web.Sushi_Inka.repository.RestauranteRepository;
 import web.Sushi_Inka.service.IRestauranteService;
 
 @Service
-public class RestauranteServiceImpl implements IRestauranteService {
+public class RestauranteService implements IRestauranteService {
 
 	@Autowired
 	private RestauranteRepository restauranteRepository;
@@ -52,3 +52,6 @@ public class RestauranteServiceImpl implements IRestauranteService {
 	}
 
 }
+
+
+

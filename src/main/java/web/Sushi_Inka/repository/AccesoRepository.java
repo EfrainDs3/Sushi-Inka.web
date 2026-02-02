@@ -13,3 +13,4 @@ public interface AccesoRepository extends JpaRepository<Acceso, Integer> {
 	List<Acceso> findByIdPerfil(Integer idPerfil);
 
 }
+

@@ -14,3 +14,4 @@ public interface VentaRepository extends JpaRepository<Venta, Integer> {
 	List<Venta> findByIdPedido(Integer idPedido);
 
 }
+

@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -8,7 +8,7 @@ import web.Sushi_Inka.repository.SuperAdminRepository;
 import web.Sushi_Inka.service.ISuperAdminService;
 
 @Service
-public class SuperAdminServiceImpl implements ISuperAdminService {
+public class SuperAdminService implements ISuperAdminService {
 
 	@Autowired
 	private SuperAdminRepository superAdminRepository;
@@ -54,3 +54,6 @@ public class SuperAdminServiceImpl implements ISuperAdminService {
 	}
 
 }
+
+
+

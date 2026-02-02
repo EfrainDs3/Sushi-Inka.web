@@ -13,3 +13,4 @@ public interface InsumoRepository extends JpaRepository<Insumo, Integer> {
 	List<Insumo> findByIdSucursal(Integer idSucursal);
 
 }
+

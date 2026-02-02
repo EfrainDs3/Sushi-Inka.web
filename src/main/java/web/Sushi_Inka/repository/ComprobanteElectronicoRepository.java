@@ -13,3 +13,4 @@ public interface ComprobanteElectronicoRepository extends JpaRepository<Comproba
 	List<ComprobanteElectronico> findByIdVenta(Integer idVenta);
 
 }
+

@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import web.Sushi_Inka.repository.SesionCajaRepository;
 import web.Sushi_Inka.service.ISesionCajaService;
 
 @Service
-public class SesionCajaServiceImpl implements ISesionCajaService {
+public class SesionCajaService implements ISesionCajaService {
 
 	@Autowired
 	private SesionCajaRepository sesionCajaRepository;
@@ -58,3 +58,6 @@ public class SesionCajaServiceImpl implements ISesionCajaService {
 	}
 
 }
+
+
+

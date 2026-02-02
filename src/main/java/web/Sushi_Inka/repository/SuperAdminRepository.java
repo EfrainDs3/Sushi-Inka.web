@@ -13,3 +13,4 @@ public interface SuperAdminRepository extends JpaRepository<SuperAdmin, Integer>
 	java.util.Optional<SuperAdmin> findByEmail(String email);
 
 }
+

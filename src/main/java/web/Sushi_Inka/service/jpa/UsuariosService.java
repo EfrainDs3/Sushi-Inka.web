@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import web.Sushi_Inka.repository.UsuariosRepository;
 import web.Sushi_Inka.service.IUsuariosService;
 
 @Service
-public class UsuariosServiceImpl implements IUsuariosService {
+public class UsuariosService implements IUsuariosService {
 
 	@Autowired
 	private UsuariosRepository usuariosRepository;
@@ -58,3 +58,6 @@ public class UsuariosServiceImpl implements IUsuariosService {
 	}
 
 }
+
+
+

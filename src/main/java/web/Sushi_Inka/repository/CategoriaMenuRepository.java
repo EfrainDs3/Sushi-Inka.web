@@ -9,3 +9,4 @@ import web.Sushi_Inka.entity.CategoriaMenu;
 public interface CategoriaMenuRepository extends JpaRepository<CategoriaMenu, Integer> {
 
 }
+

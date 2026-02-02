@@ -14,3 +14,4 @@ public interface IClienteService {
 	List<Cliente> obtenerPorSucursal(Integer idSucursal);
 
 }
+

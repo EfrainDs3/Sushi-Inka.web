@@ -13,3 +13,4 @@ public interface MesaRepository extends JpaRepository<Mesa, Integer> {
 	List<Mesa> findByIdSucursal(Integer idSucursal);
 
 }
+

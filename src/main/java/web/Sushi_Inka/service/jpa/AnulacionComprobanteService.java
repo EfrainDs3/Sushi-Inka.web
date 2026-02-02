@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import web.Sushi_Inka.repository.AnulacionComprobanteRepository;
 import web.Sushi_Inka.service.IAnulacionComprobanteService;
 
 @Service
-public class AnulacionComprobanteServiceImpl implements IAnulacionComprobanteService {
+public class AnulacionComprobanteService implements IAnulacionComprobanteService {
 
 	@Autowired
 	private AnulacionComprobanteRepository anulacionComprobanteRepository;
@@ -55,3 +55,6 @@ public class AnulacionComprobanteServiceImpl implements IAnulacionComprobanteSer
 	}
 
 }
+
+
+

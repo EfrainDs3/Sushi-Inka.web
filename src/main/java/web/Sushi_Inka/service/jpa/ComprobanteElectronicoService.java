@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import web.Sushi_Inka.repository.ComprobanteElectronicoRepository;
 import web.Sushi_Inka.service.IComprobanteElectronicoService;
 
 @Service
-public class ComprobanteElectronicoServiceImpl implements IComprobanteElectronicoService {
+public class ComprobanteElectronicoService implements IComprobanteElectronicoService {
 
 	@Autowired
 	private ComprobanteElectronicoRepository comprobanteElectronicoRepository;
@@ -57,3 +57,6 @@ public class ComprobanteElectronicoServiceImpl implements IComprobanteElectronic
 	}
 
 }
+
+
+

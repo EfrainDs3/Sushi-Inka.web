@@ -14,3 +14,4 @@ public interface ISesionCajaService {
 	List<SesionCaja> obtenerPorSucursal(Integer idSucursal);
 
 }
+

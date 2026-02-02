@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import web.Sushi_Inka.repository.PagoSuscripcionRepository;
 import web.Sushi_Inka.service.IPagoSuscripcionService;
 
 @Service
-public class PagoSuscripcionServiceImpl implements IPagoSuscripcionService {
+public class PagoSuscripcionService implements IPagoSuscripcionService {
 
 	@Autowired
 	private PagoSuscripcionRepository pagoSuscripcionRepository;
@@ -57,3 +57,6 @@ public class PagoSuscripcionServiceImpl implements IPagoSuscripcionService {
 	}
 
 }
+
+
+

@@ -14,3 +14,4 @@ public interface IProveedorService {
 	List<Proveedor> obtenerPorSucursal(Integer idSucursal);
 
 }
+

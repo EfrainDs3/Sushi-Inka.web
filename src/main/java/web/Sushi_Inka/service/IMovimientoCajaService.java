@@ -14,3 +14,4 @@ public interface IMovimientoCajaService {
 	List<MovimientoCaja> obtenerPorSesionCaja(Integer idSesionCaja);
 
 }
+

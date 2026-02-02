@@ -13,3 +13,4 @@ public interface SucursalRepository extends JpaRepository<Sucursal, Integer> {
 	List<Sucursal> findByIdRestaurante(Integer idRestaurante);
 
 }
+

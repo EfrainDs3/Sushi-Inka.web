@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import web.Sushi_Inka.repository.MesaRepository;
 import web.Sushi_Inka.service.IMesaService;
 
 @Service
-public class MesaServiceImpl implements IMesaService {
+public class MesaService implements IMesaService {
 
 	@Autowired
 	private MesaRepository mesaRepository;
@@ -55,3 +55,6 @@ public class MesaServiceImpl implements IMesaService {
 	}
 
 }
+
+
+

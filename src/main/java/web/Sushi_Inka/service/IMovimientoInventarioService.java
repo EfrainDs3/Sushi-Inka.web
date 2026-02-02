@@ -14,3 +14,4 @@ public interface IMovimientoInventarioService {
 	List<MovimientoInventario> obtenerPorInsumo(Integer idInsumo);
 
 }
+

@@ -13,3 +13,4 @@ public interface ICategoriaGastoService {
 	void eliminar(Integer id);
 
 }
+

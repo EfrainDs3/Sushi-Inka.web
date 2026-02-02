@@ -18,3 +18,4 @@ public interface ISuperAdminService {
 	SuperAdmin obtenerPorNombreUsuario(String usuarioSuperAdmin);
 
 }
+

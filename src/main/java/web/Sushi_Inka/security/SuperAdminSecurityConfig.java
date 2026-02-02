@@ -43,3 +43,4 @@ public class SuperAdminSecurityConfig {
         return http.build();
     }
 }
+

@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import web.Sushi_Inka.repository.PerfilRepository;
 import web.Sushi_Inka.service.IPerfilService;
 
 @Service
-public class PerfilServiceImpl implements IPerfilService {
+public class PerfilService implements IPerfilService {
 
 	@Autowired
 	private PerfilRepository perfilRepository;
@@ -48,3 +48,6 @@ public class PerfilServiceImpl implements IPerfilService {
 	}
 
 }
+
+
+

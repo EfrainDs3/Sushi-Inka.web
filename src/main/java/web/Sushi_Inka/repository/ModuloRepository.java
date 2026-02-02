@@ -9,3 +9,4 @@ import web.Sushi_Inka.entity.Modulo;
 public interface ModuloRepository extends JpaRepository<Modulo, Integer> {
 
 }
+

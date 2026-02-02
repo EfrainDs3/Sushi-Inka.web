@@ -14,3 +14,4 @@ public interface IBitacoraAccionService {
 	List<BitacoraAccion> obtenerPorUsuario(Integer idUsuario);
 
 }
+

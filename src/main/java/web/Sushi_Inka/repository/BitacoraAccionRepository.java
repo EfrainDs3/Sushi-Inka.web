@@ -13,3 +13,4 @@ public interface BitacoraAccionRepository extends JpaRepository<BitacoraAccion, 
 	List<BitacoraAccion> findByIdUsuario(Integer idUsuario);
 
 }
+

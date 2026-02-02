@@ -9,3 +9,4 @@ import web.Sushi_Inka.entity.Perfil;
 public interface PerfilRepository extends JpaRepository<Perfil, Integer> {
 
 }
+

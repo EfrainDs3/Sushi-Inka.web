@@ -14,3 +14,4 @@ public interface PlatoRepository extends JpaRepository<Plato, Integer> {
 	List<Plato> findByIdSucursal(Integer idSucursal);
 
 }
+

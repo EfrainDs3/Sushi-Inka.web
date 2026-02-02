@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import web.Sushi_Inka.repository.InsumoRepository;
 import web.Sushi_Inka.service.IInsumoService;
 
 @Service
-public class InsumoServiceImpl implements IInsumoService {
+public class InsumoService implements IInsumoService {
 
 	@Autowired
 	private InsumoRepository insumoRepository;
@@ -58,3 +58,6 @@ public class InsumoServiceImpl implements IInsumoService {
 	}
 
 }
+
+
+

@@ -9,3 +9,4 @@ import web.Sushi_Inka.entity.Restaurante;
 public interface RestauranteRepository extends JpaRepository<Restaurante, Integer> {
 
 }
+

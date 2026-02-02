@@ -76,7 +76,7 @@ public class JwtFilter extends GenericFilter {
             // 1️⃣ Intentar autenticación Legacy (Registros)
             Optional<Registros> matchRegistro = registrosRepository.findAll()
                     .stream()
-                    .filter(r -> token.equals(r.getToken()))
+                    .filter(r -> token.equals(r.getAccess_token()))
                     .findFirst();
 
             if (matchRegistro.isPresent()) {

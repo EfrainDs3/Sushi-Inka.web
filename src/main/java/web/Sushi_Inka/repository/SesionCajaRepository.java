@@ -13,3 +13,4 @@ public interface SesionCajaRepository extends JpaRepository<SesionCaja, Integer>
 	List<SesionCaja> findByIdSucursal(Integer idSucursal);
 
 }
+

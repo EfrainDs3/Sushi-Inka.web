@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import web.Sushi_Inka.repository.AccesoRepository;
 import web.Sushi_Inka.service.IAccesoService;
 
 @Service
-public class AccesoServiceImpl implements IAccesoService {
+public class AccesoService implements IAccesoService {
 
 	@Autowired
 	private AccesoRepository accesoRepository;
@@ -57,3 +57,6 @@ public class AccesoServiceImpl implements IAccesoService {
 	}
 
 }
+
+
+

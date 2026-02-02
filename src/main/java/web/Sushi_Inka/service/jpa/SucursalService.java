@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import web.Sushi_Inka.repository.SucursalRepository;
 import web.Sushi_Inka.service.ISucursalService;
 
 @Service
-public class SucursalServiceImpl implements ISucursalService {
+public class SucursalService implements ISucursalService {
 
 	@Autowired
 	private SucursalRepository sucursalRepository;
@@ -55,3 +55,6 @@ public class SucursalServiceImpl implements ISucursalService {
 	}
 
 }
+
+
+

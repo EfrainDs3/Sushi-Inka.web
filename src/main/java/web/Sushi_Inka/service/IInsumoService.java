@@ -14,3 +14,4 @@ public interface IInsumoService {
 	List<Insumo> obtenerPorSucursal(Integer idSucursal);
 
 }
+

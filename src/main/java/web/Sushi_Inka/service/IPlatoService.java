@@ -15,3 +15,4 @@ public interface IPlatoService {
 	List<Plato> obtenerPorSucursal(Integer idSucursal);
 
 }
+

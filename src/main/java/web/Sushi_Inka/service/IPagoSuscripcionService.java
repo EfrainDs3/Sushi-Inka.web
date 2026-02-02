@@ -14,3 +14,4 @@ public interface IPagoSuscripcionService {
 	List<PagoSuscripcion> obtenerPorRestaurante(Integer idRestaurante);
 
 }
+

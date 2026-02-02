@@ -13,3 +13,4 @@ public interface AnulacionComprobanteRepository extends JpaRepository<AnulacionC
 	List<AnulacionComprobante> findByIdVenta(Integer idVenta);
 
 }
+

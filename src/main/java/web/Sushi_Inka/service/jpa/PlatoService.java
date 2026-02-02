@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import web.Sushi_Inka.repository.PlatoRepository;
 import web.Sushi_Inka.service.IPlatoService;
 
 @Service
-public class PlatoServiceImpl implements IPlatoService {
+public class PlatoService implements IPlatoService {
 
 	@Autowired
 	private PlatoRepository platoRepository;
@@ -61,3 +61,6 @@ public class PlatoServiceImpl implements IPlatoService {
 	}
 
 }
+
+
+

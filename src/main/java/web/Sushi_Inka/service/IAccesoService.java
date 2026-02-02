@@ -14,3 +14,4 @@ public interface IAccesoService {
 	List<Acceso> obtenerAccesosPorPerfil(Integer idPerfil);
 
 }
+

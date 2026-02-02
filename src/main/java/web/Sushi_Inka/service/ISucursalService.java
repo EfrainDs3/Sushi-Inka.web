@@ -14,3 +14,4 @@ public interface ISucursalService {
 	List<Sucursal> obtenerPorRestaurante(Integer idRestaurante);
 
 }
+

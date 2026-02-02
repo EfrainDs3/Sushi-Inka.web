@@ -66,7 +66,7 @@ public class ExternalAuthFilter extends GenericFilter {
                 // Buscar token en tabla de registros (usuarios externos)
                 Optional<Registros> match = registrosRepository.findAll()
                         .stream()
-                        .filter(r -> token.equals(r.getToken()))
+                        .filter(r -> token.equals(r.getAccess_token()))
                         .findFirst();
 
                 if (match.isPresent()) {
@@ -92,3 +92,4 @@ public class ExternalAuthFilter extends GenericFilter {
         chain.doFilter(req, res);
     }
 }
+

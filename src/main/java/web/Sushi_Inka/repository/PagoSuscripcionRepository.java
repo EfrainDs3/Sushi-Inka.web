@@ -13,3 +13,4 @@ public interface PagoSuscripcionRepository extends JpaRepository<PagoSuscripcion
 	List<PagoSuscripcion> findByIdRestaurante(Integer idRestaurante);
 
 }
+

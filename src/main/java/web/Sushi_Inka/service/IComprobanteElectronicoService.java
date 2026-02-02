@@ -14,3 +14,4 @@ public interface IComprobanteElectronicoService {
 	List<ComprobanteElectronico> obtenerPorVenta(Integer idVenta);
 
 }
+

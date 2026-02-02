@@ -13,3 +13,4 @@ public interface ProveedorRepository extends JpaRepository<Proveedor, Integer> {
 	List<Proveedor> findByIdSucursal(Integer idSucursal);
 
 }
+

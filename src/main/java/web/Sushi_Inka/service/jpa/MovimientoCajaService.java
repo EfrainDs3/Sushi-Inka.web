@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import web.Sushi_Inka.repository.MovimientoCajaRepository;
 import web.Sushi_Inka.service.IMovimientoCajaService;
 
 @Service
-public class MovimientoCajaServiceImpl implements IMovimientoCajaService {
+public class MovimientoCajaService implements IMovimientoCajaService {
 
 	@Autowired
 	private MovimientoCajaRepository movimientoCajaRepository;
@@ -56,3 +56,6 @@ public class MovimientoCajaServiceImpl implements IMovimientoCajaService {
 	}
 
 }
+
+
+

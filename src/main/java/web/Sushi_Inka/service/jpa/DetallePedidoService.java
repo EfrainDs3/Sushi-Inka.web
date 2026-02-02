@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import web.Sushi_Inka.repository.DetallePedidoRepository;
 import web.Sushi_Inka.service.IDetallePedidoService;
 
 @Service
-public class DetallePedidoServiceImpl implements IDetallePedidoService {
+public class DetallePedidoService implements IDetallePedidoService {
 
 	@Autowired
 	private DetallePedidoRepository detallePedidoRepository;
@@ -56,3 +56,6 @@ public class DetallePedidoServiceImpl implements IDetallePedidoService {
 	}
 
 }
+
+
+

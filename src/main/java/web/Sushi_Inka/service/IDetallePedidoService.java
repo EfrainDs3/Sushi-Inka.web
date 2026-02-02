@@ -14,3 +14,4 @@ public interface IDetallePedidoService {
 	List<DetallePedido> obtenerPorPedido(Integer idPedido);
 
 }
+

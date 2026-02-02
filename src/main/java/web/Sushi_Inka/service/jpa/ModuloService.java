@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import web.Sushi_Inka.repository.ModuloRepository;
 import web.Sushi_Inka.service.IModuloService;
 
 @Service
-public class ModuloServiceImpl implements IModuloService {
+public class ModuloService implements IModuloService {
 
 	@Autowired
 	private ModuloRepository moduloRepository;
@@ -48,3 +48,6 @@ public class ModuloServiceImpl implements IModuloService {
 	}
 
 }
+
+
+

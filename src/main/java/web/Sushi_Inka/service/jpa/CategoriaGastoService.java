@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import web.Sushi_Inka.repository.CategoriaGastoRepository;
 import web.Sushi_Inka.service.ICategoriaGastoService;
 
 @Service
-public class CategoriaGastoServiceImpl implements ICategoriaGastoService {
+public class CategoriaGastoService implements ICategoriaGastoService {
 
 	@Autowired
 	private CategoriaGastoRepository categoriaGastoRepository;
@@ -48,3 +48,6 @@ public class CategoriaGastoServiceImpl implements ICategoriaGastoService {
 	}
 
 }
+
+
+

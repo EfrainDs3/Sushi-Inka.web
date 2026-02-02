@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import web.Sushi_Inka.repository.PedidoRepository;
 import web.Sushi_Inka.service.IPedidoService;
 
 @Service
-public class PedidoServiceImpl implements IPedidoService {
+public class PedidoService implements IPedidoService {
 
 	@Autowired
 	private PedidoRepository pedidoRepository;
@@ -62,3 +62,6 @@ public class PedidoServiceImpl implements IPedidoService {
 	}
 
 }
+
+
+

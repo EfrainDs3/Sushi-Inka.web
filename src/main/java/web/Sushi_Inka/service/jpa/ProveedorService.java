@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import web.Sushi_Inka.repository.ProveedorRepository;
 import web.Sushi_Inka.service.IProveedorService;
 
 @Service
-public class ProveedorServiceImpl implements IProveedorService {
+public class ProveedorService implements IProveedorService {
 
 	@Autowired
 	private ProveedorRepository proveedorRepository;
@@ -57,3 +57,6 @@ public class ProveedorServiceImpl implements IProveedorService {
 	}
 
 }
+
+
+

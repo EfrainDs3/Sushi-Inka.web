@@ -13,3 +13,4 @@ public interface MovimientoInventarioRepository extends JpaRepository<Movimiento
 	List<MovimientoInventario> findByIdInsumo(Integer idInsumo);
 
 }
+

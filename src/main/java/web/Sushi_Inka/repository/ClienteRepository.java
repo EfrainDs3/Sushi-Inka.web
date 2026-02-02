@@ -13,3 +13,4 @@ public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
 	List<Cliente> findByIdSucursal(Integer idSucursal);
 
 }
+

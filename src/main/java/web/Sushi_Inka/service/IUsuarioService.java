@@ -22,3 +22,4 @@ public interface IUsuarioService {
 	void deleteUsuario(Integer id);
 
 }
+

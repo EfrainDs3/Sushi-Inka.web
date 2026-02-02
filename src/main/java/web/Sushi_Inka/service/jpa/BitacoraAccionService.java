@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import web.Sushi_Inka.repository.BitacoraAccionRepository;
 import web.Sushi_Inka.service.IBitacoraAccionService;
 
 @Service
-public class BitacoraAccionServiceImpl implements IBitacoraAccionService {
+public class BitacoraAccionService implements IBitacoraAccionService {
 
 	@Autowired
 	private BitacoraAccionRepository bitacoraAccionRepository;
@@ -57,3 +57,6 @@ public class BitacoraAccionServiceImpl implements IBitacoraAccionService {
 	}
 
 }
+
+
+

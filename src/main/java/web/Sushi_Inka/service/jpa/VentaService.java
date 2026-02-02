@@ -1,4 +1,4 @@
-package web.Sushi_Inka.service.impl;
+package web.Sushi_Inka.service.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import web.Sushi_Inka.repository.VentaRepository;
 import web.Sushi_Inka.service.IVentaService;
 
 @Service
-public class VentaServiceImpl implements IVentaService {
+public class VentaService implements IVentaService {
 
 	@Autowired
 	private VentaRepository ventaRepository;
@@ -63,3 +63,6 @@ public class VentaServiceImpl implements IVentaService {
 	}
 
 }
+
+
+
