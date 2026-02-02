@@ -14,6 +14,11 @@ public class SuperAdminServiceImpl implements ISuperAdminService {
 	private SuperAdminRepository superAdminRepository;
 
 	@Override
+	public java.util.List<SuperAdmin> obtenerTodos() {
+		return superAdminRepository.findAll();
+	}
+
+	@Override
 	public SuperAdmin obtenerPorId(Integer id) {
 		return superAdminRepository.findById(id).orElse(null);
 	}
@@ -45,7 +50,7 @@ public class SuperAdminServiceImpl implements ISuperAdminService {
 
 	@Override
 	public SuperAdmin obtenerPorNombreUsuario(String usuarioSuperAdmin) {
-		return superAdminRepository.findByUsuarioSuperAdmin(usuarioSuperAdmin);
+		return superAdminRepository.findByUsuarioSuperAdmin(usuarioSuperAdmin).orElse(null);
 	}
 
 }

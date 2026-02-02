@@ -16,6 +16,8 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.http.HttpServletRequest;
+import web.Sushi_Inka.entity.Registros;
+import web.Sushi_Inka.repository.RegistrosRepository;
 
 /**
  * Filtro de autenticación para usuarios EXTERNOS
@@ -64,12 +66,12 @@ public class ExternalAuthFilter extends GenericFilter {
                 // Buscar token en tabla de registros (usuarios externos)
                 Optional<Registros> match = registrosRepository.findAll()
                         .stream()
-                        .filter(r -> token.equals(r.getAccess_token()))
+                        .filter(r -> token.equals(r.getToken()))
                         .findFirst();
 
                 if (match.isPresent()) {
                     Registros registro = match.get();
-                    String clienteId = registro.getid_usuario();
+                    String clienteId = registro.getEmail();
 
                     // Autenticar usuario externo
                     UsernamePasswordAuthenticationToken auth = new UsernamePasswordAuthenticationToken(

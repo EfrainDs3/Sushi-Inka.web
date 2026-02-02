@@ -16,8 +16,12 @@ import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import web.Sushi_Inka.entity.Registros;
+import web.Sushi_Inka.entity.SuperAdmin;
 import web.Sushi_Inka.entity.Usuarios;
-import web.Sushi_Inka.repository.UsuarioRepository;
+import web.Sushi_Inka.repository.RegistrosRepository;
+import web.Sushi_Inka.repository.SuperAdminRepository;
+import web.Sushi_Inka.repository.UsuariosRepository;
 
 @Component
 public class JwtFilter extends GenericFilter {
@@ -29,7 +33,7 @@ public class JwtFilter extends GenericFilter {
     private JwtUtil jwtUtil;
 
     @Autowired
-    private UsuarioRepository usuarioRepository;
+    private UsuariosRepository usuarioRepository;
 
     @Autowired
     private SuperAdminRepository superAdminRepository;
@@ -72,11 +76,11 @@ public class JwtFilter extends GenericFilter {
             // 1️⃣ Intentar autenticación Legacy (Registros)
             Optional<Registros> matchRegistro = registrosRepository.findAll()
                     .stream()
-                    .filter(r -> token.equals(r.getAccess_token()))
+                    .filter(r -> token.equals(r.getToken()))
                     .findFirst();
 
             if (matchRegistro.isPresent()) {
-                String clienteId = matchRegistro.get().getid_usuario();
+                String clienteId = matchRegistro.get().getEmail();
                 UsernamePasswordAuthenticationToken auth = new UsernamePasswordAuthenticationToken(clienteId, null,
                         Collections.emptyList());
                 SecurityContextHolder.getContext().setAuthentication(auth);

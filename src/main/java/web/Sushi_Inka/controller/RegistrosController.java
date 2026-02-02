@@ -39,9 +39,9 @@ public class RegistrosController {
 	}
 
 	@GetMapping("/token/{token}")
-	public ResponseEntity<List<Registros>> obtenerPorToken(@PathVariable String token) {
-		List<Registros> registros = registrosService.obtenerPorToken(token);
-		return ResponseEntity.ok(registros);
+	public ResponseEntity<Registros> obtenerPorToken(@PathVariable String token) {
+		Registros registro = registrosService.obtenerPorToken(token);
+		return ResponseEntity.ok(registro);
 	}
 
 	@GetMapping("/email/{email}")

@@ -120,7 +120,7 @@ public class UsuarioController {
                 // Obtener el nombre del perfil real del usuario
                 String nombrePerfil = "Sin perfil";
                 if (usuario.getRolId() != null) {
-                    nombrePerfil = perfilService.getPerfilById(usuario.getRolId())
+                    nombrePerfil = Optional.ofNullable(perfilService.obtenerPorId(usuario.getRolId()))
                             .map(perfil -> perfil.getNombrePerfil())
                             .orElse("Sin perfil");
                 }
@@ -354,6 +354,5 @@ public class UsuarioController {
                 return null; // Rol no válido
         }
     }
-
 
 }

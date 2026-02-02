@@ -7,7 +7,7 @@ import web.Sushi_Inka.entity.Usuarios;
 
 @Repository
 public interface UsuariosRepository extends JpaRepository<Usuarios, Integer> {
-	
-	Usuarios findByNombreUsuarioLogin(String nombreUsuarioLogin);
+
+	java.util.Optional<Usuarios> findByNombreUsuarioLogin(String nombreUsuarioLogin);
 
 }

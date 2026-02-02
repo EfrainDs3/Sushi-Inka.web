@@ -39,9 +39,9 @@ public class SuperAdminController {
 	}
 
 	@GetMapping("/usuario/{nombreUsuario}")
-	public ResponseEntity<List<SuperAdmin>> obtenerPorNombreUsuario(@PathVariable String nombreUsuario) {
-		List<SuperAdmin> superAdmins = superAdminService.obtenerPorNombreUsuario(nombreUsuario);
-		return ResponseEntity.ok(superAdmins);
+	public ResponseEntity<SuperAdmin> obtenerPorNombreUsuario(@PathVariable String nombreUsuario) {
+		SuperAdmin superAdmin = superAdminService.obtenerPorNombreUsuario(nombreUsuario);
+		return ResponseEntity.ok(superAdmin);
 	}
 
 	@PostMapping

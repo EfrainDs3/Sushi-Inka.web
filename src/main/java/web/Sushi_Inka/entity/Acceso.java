@@ -1,7 +1,7 @@
 package web.Sushi_Inka.entity;
 
 import org.hibernate.annotations.SQLDelete;
-import org.hibernate.annotations. Where;
+import org.hibernate.annotations.SQLRestriction;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -13,7 +13,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "acceso")
 @SQLDelete(sql = "UPDATE acceso SET estado = 0 WHERE id_acceso = ?")
-@Where(clause = "estado = 1")
+@org.hibernate.annotations.SQLRestriction("estado = 1")
 public class Acceso {
 
 	@Id

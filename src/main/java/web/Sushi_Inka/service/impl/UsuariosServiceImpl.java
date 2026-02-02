@@ -54,7 +54,7 @@ public class UsuariosServiceImpl implements IUsuariosService {
 
 	@Override
 	public Usuarios obtenerPorNombreUsuario(String nombreUsuarioLogin) {
-		return usuariosRepository.findByNombreUsuarioLogin(nombreUsuarioLogin);
+		return usuariosRepository.findByNombreUsuarioLogin(nombreUsuarioLogin).orElse(null);
 	}
 
 }

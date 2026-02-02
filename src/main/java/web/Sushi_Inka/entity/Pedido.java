@@ -1,7 +1,7 @@
 package web.Sushi_Inka.entity;
 
 import org.hibernate.annotations.SQLDelete;
-import org.hibernate.annotations.Where;
+import org.hibernate.annotations.SQLRestriction;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -13,7 +13,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "pedidos")
 @SQLDelete(sql = "UPDATE pedidos SET estado_pedido = 'cancelado' WHERE id_pedido = ?")
-@Where(clause = "estado_pedido != 'cancelado'")
+@org.hibernate.annotations.SQLRestriction("estado_pedido != 'cancelado'")
 public class Pedido {
 
 	@Id

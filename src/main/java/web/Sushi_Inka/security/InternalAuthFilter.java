@@ -17,8 +17,8 @@ import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import web.Regional_Api.entity.Usuarios;
-import web.Regional_Api.repository.UsuarioRepository;
+import web.Sushi_Inka.entity.Usuarios;
+import web.Sushi_Inka.repository.UsuariosRepository;
 
 /**
  * Filtro de autenticación para usuarios INTERNOS del sistema
@@ -34,7 +34,7 @@ public class InternalAuthFilter extends GenericFilter {
     private JwtUtil jwtUtil;
 
     @Autowired
-    private UsuarioRepository usuarioRepository;
+    private UsuariosRepository usuarioRepository;
 
     @Override
     public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)

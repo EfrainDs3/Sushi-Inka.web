@@ -1,7 +1,7 @@
 package web.Sushi_Inka.entity;
 
 import org.hibernate.annotations.SQLDelete;
-import org.hibernate.annotations.Where;
+import org.hibernate.annotations.SQLRestriction;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -13,7 +13,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "superadmin")
 @SQLDelete(sql = "UPDATE superadmin SET estado = 0 WHERE id_superadmin = ?")
-@Where(clause = "estado = 1")
+@org.hibernate.annotations.SQLRestriction("estado = 1")
 public class SuperAdmin {
 
 	@Id
@@ -38,6 +38,9 @@ public class SuperAdmin {
 
 	@Column(name = "estado")
 	private Integer estado;
+
+	@Column(name = "rol") // Added rol field
+	private String rol;
 
 	public SuperAdmin() {
 	}
@@ -96,6 +99,14 @@ public class SuperAdmin {
 
 	public void setEstado(Integer estado) {
 		this.estado = estado;
+	}
+
+	public String getRol() {
+		return rol;
+	}
+
+	public void setRol(String rol) {
+		this.rol = rol;
 	}
 
 	@Override
